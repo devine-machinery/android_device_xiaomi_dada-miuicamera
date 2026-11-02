@@ -1,0 +1,13 @@
+# Google Lens
+ro.com.google.lens.oem_camera_package=com.android.camera
+
+# Framework allowlists
+persist.vendor.camera.privapp.list=com.android.camera,com.miui.extraphoto,org.lineageos.aperture
+
+# MiuiCamera
+ro.product.camera.livephoto.support=3
+ro.miui.build.region=global
+ro.miui.notch=1
+ro.miui.region=JP
+ro.miui.ui.version.name=V816
+ro.miui.ui.version.code=816

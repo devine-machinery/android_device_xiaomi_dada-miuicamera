@@ -1,0 +1,33 @@
+# A17: MiuiCamera may run as platform_app (targetSdk < 37) or platform_app_36.
+binder_use(platform_app)
+binder_call({ platform_app platform_app_36 }, hal_camera_default)
+binder_call({ platform_app platform_app_36 }, hal_hypsys_vendor)
+binder_call(hal_camera_default, { platform_app platform_app_36 })
+
+allow { platform_app platform_app_36 } hal_aidlbgservice_service:service_manager find;
+allow { platform_app platform_app_36 } hal_misys_service:service_manager find;
+allow { platform_app platform_app_36 } hal_quickcamera_service:service_manager find;
+
+allow { platform_app platform_app_36 } adsprpcd_file:dir { getattr open read search watch };
+allow { platform_app platform_app_36 } vendor_miuicamera_dsp_file:dir { getattr open read search watch };
+
+allow { platform_app platform_app_36 } vendor_camera_data_file:dir { append map r_dir_perms write };
+allow { platform_app platform_app_36 } vendor_camera_data_file:file { getattr open read };
+
+allow { platform_app platform_app_36 } app_data_file:file execute;
+allow { platform_app platform_app_36 } hal_camera_default:fd *;
+allow { platform_app platform_app_36 } vendor_file:dir watch;
+
+# MIUI Camera samples PSI data to adapt its workload to system pressure.
+allow { platform_app platform_app_36 } proc_pressure_cpu:file r_file_perms;
+allow { platform_app platform_app_36 } proc_pressure_io:file r_file_perms;
+allow { platform_app platform_app_36 } proc_pressure_mem:file r_file_perms;
+
+# Properties
+get_prop({ platform_app platform_app_36 }, vendor_audio_prop)
+get_prop({ platform_app platform_app_36 }, vendor_camera_p3enable_prop)
+get_prop({ platform_app platform_app_36 }, vendor_camera_sensor_prop)
+get_prop({ platform_app platform_app_36 }, vendor_display_prop)
+get_prop({ platform_app platform_app_36 }, vendor_displayfeature_prop)
+get_prop({ platform_app platform_app_36 }, vendor_panel_info_prop)
+get_prop({ platform_app platform_app_36 }, vendor_fp_prop)

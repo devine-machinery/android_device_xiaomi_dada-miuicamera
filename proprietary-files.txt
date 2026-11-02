@@ -1,0 +1,24 @@
+# All unpinned blobs below are extracted from dada OS4.0.0.22.XOCCNXM (HyperOS 4 / Android 17)
+
+product/priv-app/MiuiCamera/MiuiCamera.apk:system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=Aperture,Camera2
+product/priv-app/MiuiExtraPhoto/MiuiExtraPhoto.apk:system/priv-app/MiuiExtraPhoto/MiuiExtraPhoto.apk
+
+# HIDL + AIDL JNI used by HyperOS 4 MiuiCamera
+system_ext/lib64/libcamera_algoup_jni.xiaomi.so:system/lib64/libcamera_algoup_jni.xiaomi.so
+system_ext/lib64/libcamera_mianode_jni.xiaomi.so:system/lib64/libcamera_mianode_jni.xiaomi.so
+system_ext/lib64/libmicampostproc_client.so:system/lib64/libmicampostproc_client.so
+system_ext/lib64/libmicampostproc_client_aidl.so:system/lib64/libmicampostproc_client_aidl.so
+system_ext/lib64/vendor.xiaomi.hardware.campostproc@1.0.so:system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so;MODULE_SUFFIX=_system
+system_ext/lib64/vendor.xiaomi.hardware.aidlcampostproc-V1-ndk.so:system/lib64/vendor.xiaomi.hardware.aidlcampostproc-V1-ndk.so
+system_ext/lib64/libcameraopt_jni.so:system/lib64/libcameraopt_jni.so
+system_ext/lib64/libcameraopt.so:system/lib64/libcameraopt.so;MODULE_SUFFIX=_system
+system_ext/lib64/vendor.xiaomi.hardware.quickcamera-V1-ndk.so:system/lib64/vendor.xiaomi.hardware.quickcamera-V1-ndk.so
+system_ext/lib64/libmicar_algoengine_jni.xiaomi.so:system/lib64/libmicar_algoengine_jni.xiaomi.so
+system_ext/lib64/libvirtualcamera_imageutils_jni.so:system/lib64/libvirtualcamera_imageutils_jni.so
+system_ext/lib64/libvirtualcamera_surfaceutils_jni.so:system/lib64/libvirtualcamera_surfaceutils_jni.so
+system_ext/lib64/libmisys_jni.xiaomi.so:system/lib64/libmisys_jni.xiaomi.so
+system_ext/lib64/libmigui.so:system/lib64/libmigui.so
+system_ext/lib64/vendor.xiaomi.hardware.misys@1.0.so:system/lib64/vendor.xiaomi.hardware.misys@1.0.so;MODULE_SUFFIX=_system
+system_ext/lib64/vendor.xiaomi.hardware.misys@3.0.so:system/lib64/vendor.xiaomi.hardware.misys@3.0.so;MODULE_SUFFIX=_system
+system_ext/lib64/vendor.xiaomi.hardware.bgservice@1.0.so:system/lib64/vendor.xiaomi.hardware.bgservice@1.0.so;MODULE_SUFFIX=_system
+system_ext/lib64/vendor.xiaomi.hardware.aidlbgservice-V1-ndk.so:system/lib64/vendor.xiaomi.hardware.aidlbgservice-V1-ndk.so;MODULE_SUFFIX=_system

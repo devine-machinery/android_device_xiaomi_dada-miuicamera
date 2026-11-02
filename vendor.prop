@@ -1,0 +1,3 @@
+# Camera
+ro.hardware.camera=xiaomi
+ro.camera.disableJpegR=true

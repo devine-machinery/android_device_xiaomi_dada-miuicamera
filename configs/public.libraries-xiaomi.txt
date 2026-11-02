@@ -1,0 +1,10 @@
+libcamera_algoup_jni.xiaomi.so
+libcamera_mianode_jni.xiaomi.so
+libmicampostproc_client.so
+libmicampostproc_client_aidl.so
+libcameraopt_jni.so
+libmicar_algoengine_jni.xiaomi.so
+libvirtualcamera_imageutils_jni.so
+libvirtualcamera_surfaceutils_jni.so
+libmisys_jni.xiaomi.so
+libmigui.so
